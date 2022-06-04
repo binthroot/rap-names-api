@@ -41,6 +41,6 @@ app.get('/api/:name', (req, res) => {
   res.json(rappers['unknown']);
 });
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`The server is running on ${PORT}`);
 });
