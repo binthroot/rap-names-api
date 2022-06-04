@@ -4,7 +4,7 @@ async function apiRequest() {
   const rapperName = document.querySelector('input').value;
   try {
     const response = await fetch(
-      `https://rapper-api-binthroot.herokuapp.com/api${rapperName}`
+      `https://rapper-api-binthroot.herokuapp.com/api/${rapperName}`
     );
     const data = await response.json();
 
